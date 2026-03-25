@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // WA function
   function pesanWA(jasa) {
-    const phoneNumber = window.WHATSAPP_NUMBER || "6287701330823";
+    const phoneNumber = "6287701330823";
     const message = `Halo admin GasJoki! Saya tertarik dengan layanan *${jasa}* dari GasJoki.id. Mohon infonya lebih lanjut ya kak. Terima kasih.`;
     const encoded = encodeURIComponent(message);
     window.open(
