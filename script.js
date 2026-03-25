@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // WA function
   function pesanWA(jasa) {
     const phoneNumber = window.WHATSAPP_NUMBER;
-    const message = `Halo admin GasJoki! Saya tertarik dengan layanan *${jasa}*. Mohon infonya lebih lanjut ya kak. Terima kasih.`;
+    const message = `Halo admin GasJoki! Saya tertarik dengan layanan *${jasa}* dari GasJoki.id. Mohon infonya lebih lanjut ya kak. Terima kasih.`;
     const encoded = encodeURIComponent(message);
     window.open(
       `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encoded}`,
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const floatBtn = document.getElementById("floatingWaBtn");
   floatBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    pesanWA("Konsultasi Umum");
+    pesanWA("Konsultasi");
   });
   const footerWa = document.getElementById("waFooterLink");
   if (footerWa)
