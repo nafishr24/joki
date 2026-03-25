@@ -20,8 +20,16 @@
       property="og:description"
       content="Tugas menumpuk? kami kerjain. Kamu tinggal tidur nyenyak, nilai auto juara!"
     />
-    <meta property="og:image" content="images/logo.webp" />
+    <meta
+      property="og:image"
+      content="https://nafishr24.github.io/joki/images/logo.webp"
+    />
     <meta property="og:type" content="website" />
+
+    <meta
+      name="keywords"
+      content="joki tugas, joki skripsi, jasa tugas kuliah, gasjoki, joki tugas online, bantu tugas, skripsi cepat, tugas sekolah, joki terpercaya, joki"
+    />
 
     <!-- Favicon - Logo Website -->
     <link rel="icon" type="image/png" href="images/logo.webp" />
@@ -35,197 +43,8 @@
     />
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <style>
-      /* FONT & BACKGROUND SESUAI DISKUSI AWAL */
-      * {
-        font-family: "Plus Jakarta Sans", sans-serif;
-      }
-
-      body {
-        background-color: #020617; /* Dark Navy sesuai diskusi awal */
-        color: #e2e8f0;
-        scroll-behavior: smooth;
-      }
-
-      /* Enhanced card backgrounds - vibrant gradients with contrast */
-      .card-vibrant {
-        background: linear-gradient(
-          135deg,
-          rgba(30, 41, 59, 0.7) 0%,
-          rgba(15, 23, 42, 0.8) 100%
-        );
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        transition: all 0.3s ease;
-      }
-
-      .card-vibrant:hover {
-        border-color: rgba(59, 130, 246, 0.4);
-        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
-        transform: translateY(-5px);
-      }
-
-      /* Why choose cards */
-      .card-why {
-        background: rgba(30, 41, 59, 0.5);
-        backdrop-filter: blur(8px);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-      }
-
-      /* Testimonial cards */
-      .card-testi {
-        background: rgba(15, 23, 42, 0.6);
-        backdrop-filter: blur(4px);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-      }
-
-      /* Best seller specific */
-      .blinking-border {
-        animation: borderPulse 1.2s infinite ease-in-out;
-        border-width: 2px;
-        border-style: solid;
-        border-color: rgba(245, 158, 11, 0.7);
-        box-shadow: 0 0 5px rgba(245, 158, 11, 0.3);
-        background: rgba(15, 23, 42, 0.9);
-      }
-
-      @keyframes borderPulse {
-        0% {
-          border-color: rgba(245, 158, 11, 0.5);
-          box-shadow: 0 0 0px rgba(245, 158, 11, 0);
-        }
-        50% {
-          border-color: rgba(245, 158, 11, 0.95);
-          box-shadow: 0 0 12px rgba(245, 158, 11, 0.6);
-        }
-        100% {
-          border-color: rgba(245, 158, 11, 0.5);
-          box-shadow: 0 0 0px rgba(245, 158, 11, 0);
-        }
-      }
-
-      /* Glowing effect for buttons */
-      .glow-orange {
-        box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
-        transition: all 0.3s ease;
-      }
-      .glow-orange:hover {
-        box-shadow: 0 0 30px rgba(245, 158, 11, 0.7);
-        transform: scale(1.02);
-      }
-
-      .glow-blue {
-        transition: all 0.2s ease;
-      }
-      .glow-blue:hover {
-        box-shadow: 0 0 18px rgba(59, 130, 246, 0.6);
-      }
-
-      /* Floating WA button pulse */
-      .float-wa {
-        animation: pulse-ring 2s infinite;
-      }
-      @keyframes pulse-ring {
-        0% {
-          box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5);
-        }
-        70% {
-          box-shadow: 0 0 0 15px rgba(34, 197, 94, 0);
-        }
-        100% {
-          box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
-        }
-      }
-
-      /* scroll reveal */
-      .reveal {
-        opacity: 0;
-        transform: translateY(35px);
-        transition: all 0.8s ease;
-      }
-      .reveal.active {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      /* text gradient */
-      .gradient-text {
-        background: linear-gradient(135deg, #3b82f6, #f97316);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-      }
-
-      /* typewriter cursor blink */
-      .typed-cursor {
-        display: inline-block;
-        width: 3px;
-        background-color: #f97316;
-        margin-left: 4px;
-        animation: blink 1s infinite;
-      }
-      @keyframes blink {
-        0%,
-        100% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0;
-        }
-      }
-
-      /* grid background - halus */
-      .bg-grid {
-        background-image: radial-gradient(
-          circle at 1px 1px,
-          rgba(59, 130, 246, 0.05) 1px,
-          transparent 1px
-        );
-        background-size: 40px 40px;
-      }
-
-      /* FIRE ANIMATION */
-      .fire-emoji {
-        display: inline-block;
-        animation:
-          flicker 1.2s infinite alternate,
-          scalePulse 1s infinite ease-in-out;
-        transform-origin: center;
-      }
-      @keyframes flicker {
-        0% {
-          text-shadow:
-            0 0 2px #ff5e00,
-            0 0 5px #ff2e00;
-          opacity: 0.9;
-        }
-        50% {
-          text-shadow:
-            0 0 10px #ff8c00,
-            0 0 15px #ff3300;
-          opacity: 1;
-          transform: scale(1.05);
-        }
-        100% {
-          text-shadow:
-            0 0 3px #ffaa33,
-            0 0 8px #ff5500;
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-      @keyframes scalePulse {
-        0% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.1);
-        }
-        100% {
-          transform: scale(1);
-        }
-      }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="overflow-x-hidden bg-grid">
     <!-- Floating WhatsApp Button -->
@@ -247,13 +66,12 @@
       class="fixed top-0 w-full z-50 bg-slate-900/60 backdrop-blur-xl border-b border-white/10 transition-all duration-300"
     >
       <div
-        class="container mx-auto px-6 py-3 flex justify-between items-center"
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
       >
-        <!-- Logo diperbaiki murni menggunakan gambar lokal -->
         <img
           src="images/logo.webp"
           alt="GasJoki.id"
-          class="h-10 w-auto object-contain"
+          class="h-16 md:h-20 w-auto object-contain"
         />
 
         <div class="hidden md:flex space-x-8 font-semibold">
@@ -387,7 +205,6 @@
         >
           <div class="flex-shrink-0">
             <div class="relative">
-              <!-- Foto Profil diperbaiki murni menggunakan gambar lokal -->
               <img
                 src="images/foto.webp"
                 alt="Founder GasJoki"
@@ -738,18 +555,16 @@
         class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left"
       >
         <div>
-          <!-- Logo diperbaiki -->
           <img
             src="images/logo.webp"
             alt="GasJoki.id"
-            class="h-10 w-auto object-contain mx-auto md:mx-0"
+            class="h-20 md:h-25 w-auto object-contain mx-auto md:mx-0"
           />
           <p class="text-slate-500 text-sm mt-2">#GasTerusTanpaBeban</p>
         </div>
         <div class="flex space-x-5">
-          <!-- Ikon Instagram diganti SVG Bawaan (Pasti Muncul) -->
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/gasjoki.id"
             target="_blank"
             class="p-3 bg-blue-600/20 hover:bg-blue-600 text-blue-400 hover:text-white rounded-full transition-all flex items-center justify-center"
           >
@@ -776,7 +591,7 @@
             ><i data-lucide="message-circle" class="w-5 h-5"></i
           ></a>
           <a
-            href="#"
+            href="mailto:nafishusenromadani@gmail.com"
             class="p-3 bg-slate-700/30 hover:bg-slate-600 text-slate-300 rounded-full transition-all"
             ><i data-lucide="mail" class="w-5 h-5"></i
           ></a>
@@ -787,121 +602,8 @@
       </div>
     </footer>
 
-    <script>
-      lucide.createIcons();
-
-      // Typewriter effect
-      const texts = [
-        "Joki Tugas Cepat & Akurat",
-        "Bebas Deadline & Stress",
-        "Skripsi Auto ACC",
-        "Nilai Memuaskan Tanpa Ribet",
-      ];
-      let idx = 0,
-        charIndex = 0;
-      let currentText = "";
-      const typewriterEl = document.getElementById("typewriter");
-      function typeWriter() {
-        if (charIndex < texts[idx].length) {
-          currentText += texts[idx].charAt(charIndex);
-          typewriterEl.innerHTML = currentText;
-          charIndex++;
-          setTimeout(typeWriter, 80);
-        } else {
-          setTimeout(() => {
-            charIndex = 0;
-            currentText = "";
-            idx = (idx + 1) % texts.length;
-            typeWriter();
-          }, 2500);
-        }
-      }
-      typeWriter();
-
-      // Scroll reveal
-      const reveals = document.querySelectorAll(".reveal");
-      const revealObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("active");
-              revealObserver.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.15 },
-      );
-      reveals.forEach((el) => revealObserver.observe(el));
-
-      // Counter animation
-      const counters = document.querySelectorAll(".counter");
-      const counterObserver = new IntersectionObserver(
-        (entries, obs) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              const el = entry.target;
-              const target = parseInt(el.getAttribute("data-target"));
-              let current = 0;
-              const increment = target / 45;
-              const updateCounter = () => {
-                current += increment;
-                if (current < target) {
-                  el.innerText = Math.floor(current);
-                  requestAnimationFrame(updateCounter);
-                } else {
-                  el.innerText = target;
-                }
-              };
-              updateCounter();
-              obs.unobserve(el);
-            }
-          });
-        },
-        { threshold: 0.5 },
-      );
-      counters.forEach((c) => counterObserver.observe(c));
-
-      // WA function
-      function pesanWA(jasa) {
-        const phoneNumber = "628123456789";
-        const message = `Halo GasJoki! Saya tertarik dengan layanan *${jasa}*. Mohon infonya lebih lanjut. Terima kasih.`;
-        const encoded = encodeURIComponent(message);
-        window.open(
-          `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encoded}`,
-          "_blank",
-        );
-      }
-
-      function scrollToLayanan() {
-        document
-          .getElementById("layanan")
-          .scrollIntoView({ behavior: "smooth" });
-      }
-
-      const floatBtn = document.getElementById("floatingWaBtn");
-      floatBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        pesanWA("Konsultasi Umum");
-      });
-      const footerWa = document.getElementById("waFooterLink");
-      if (footerWa)
-        footerWa.addEventListener("click", (e) => {
-          e.preventDefault();
-          pesanWA("Via Footer");
-        });
-
-      window.pesanWA = pesanWA;
-      window.scrollToLayanan = scrollToLayanan;
-
-      // Navbar background
-      window.addEventListener("scroll", function () {
-        const nav = document.querySelector("nav");
-        if (window.scrollY > 50) {
-          nav.classList.add("bg-slate-900/90");
-        } else {
-          nav.classList.remove("bg-slate-900/90");
-        }
-      });
-    </script>
+    <!-- Config & Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

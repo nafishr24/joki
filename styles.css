@@ -1,0 +1,188 @@
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  background-color: #020617; /* Dark Navy*/
+  color: #e2e8f0;
+  scroll-behavior: smooth;
+}
+
+/* Enhanced card backgrounds - vibrant gradients with contrast */
+.card-vibrant {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 41, 59, 0.7) 0%,
+    rgba(15, 23, 42, 0.8) 100%
+  );
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card-vibrant:hover {
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+/* Why choose cards */
+.card-why {
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Testimonial cards */
+.card-testi {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Best seller specific */
+.blinking-border {
+  animation: borderPulse 1.2s infinite ease-in-out;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(245, 158, 11, 0.7);
+  box-shadow: 0 0 5px rgba(245, 158, 11, 0.3);
+  background: rgba(15, 23, 42, 0.9);
+}
+
+@keyframes borderPulse {
+  0% {
+    border-color: rgba(245, 158, 11, 0.5);
+    box-shadow: 0 0 0px rgba(245, 158, 11, 0);
+  }
+  50% {
+    border-color: rgba(245, 158, 11, 0.95);
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.6);
+  }
+  100% {
+    border-color: rgba(245, 158, 11, 0.5);
+    box-shadow: 0 0 0px rgba(245, 158, 11, 0);
+  }
+}
+
+/* Glowing effect for buttons */
+.glow-orange {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+  transition: all 0.3s ease;
+}
+.glow-orange:hover {
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.7);
+  transform: scale(1.02);
+}
+
+.glow-blue {
+  transition: all 0.2s ease;
+}
+.glow-blue:hover {
+  box-shadow: 0 0 18px rgba(59, 130, 246, 0.6);
+}
+
+/* Floating WA button pulse */
+.float-wa {
+  animation: pulse-ring 2s infinite;
+}
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(34, 197, 94, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+
+/* scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: all 0.8s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* text gradient */
+.gradient-text {
+  background: linear-gradient(135deg, #3b82f6, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* typewriter cursor blink */
+.typed-cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: #f97316;
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* grid background - halus */
+.bg-grid {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(59, 130, 246, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
+}
+
+/* FIRE ANIMATION */
+.fire-emoji {
+  display: inline-block;
+  animation:
+    flicker 1.2s infinite alternate,
+    scalePulse 1s infinite ease-in-out;
+  transform-origin: center;
+}
+@keyframes flicker {
+  0% {
+    text-shadow:
+      0 0 2px #ff5e00,
+      0 0 5px #ff2e00;
+    opacity: 0.9;
+  }
+  50% {
+    text-shadow:
+      0 0 10px #ff8c00,
+      0 0 15px #ff3300;
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    text-shadow:
+      0 0 3px #ffaa33,
+      0 0 8px #ff5500;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes scalePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
