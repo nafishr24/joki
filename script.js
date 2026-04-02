@@ -87,18 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("layanan").scrollIntoView({ behavior: "smooth" });
   }
 
-  const floatBtn = document.getElementById("floatingWaBtn");
-  floatBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    pesanWA("Konsultasi");
-  });
-  const footerWa = document.getElementById("waFooterLink");
-  if (footerWa)
-    footerWa.addEventListener("click", (e) => {
-      e.preventDefault();
-      pesanWA("Via Footer");
-    });
-
+  // Global window functions for WA and Scrolling
   window.pesanWA = pesanWA;
   window.scrollToLayanan = scrollToLayanan;
 
